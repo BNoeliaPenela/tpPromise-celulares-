@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="./script.js" ></script>
+    <title>Promesas</title>
+</head>
+<body>
+    <table style="border: 1px solid">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>COLOR</th>
+            <th>PRICE</th>
+            <th colspan="2"></th> <!--colspan: atributo para hacer que esa celda de encabezado ocupe 2 o mas columnas. -->
+        </thead>
+
+        <tbody>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td> 
+                <td><input id="name"/></td>
+                <td><input id="color"/></td>
+                <td><input id="price"/></td>
+                <td colspan="2"><button onclick= saveObjects()>ADD</button></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id='popUp' style="display: none;">
+        <table>
+            <tr>
+                <td><label for="id2">ID</label></td> <!--PORQUE SE PONE LABEL?-->
+                <td><input name='id2' readonly /></td> <!--PORQUE SE PONE NAME EN VEZ DE ID?-->
+            </tr>
+            <tr>
+                <td><label for="name2">NAME</label></td>
+                <td><input name="name2"/></td>
+            </tr>
+            <tr>
+                <td><label for="color2">COLOR</label></td>
+                <td><input name="color2"/></td>
+            </tr>
+            <tr>
+                <td><label for="price2">PRICE</label></td>
+                <td><input name="price2"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button onclick= updateObject()>UPDATE</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
